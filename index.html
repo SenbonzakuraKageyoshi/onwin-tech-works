@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#c625ac', secondary: '#3b2864', background: '#200b4d', textMain: '#ffffff', textSub: '#c6a5d8', }, animation: { bounceSlow: 'bounce 2s infinite', fadeIn: 'fadeIn 1s ease-in-out', pulseSlow: 'pulse 3s infinite', }, keyframes: { fadeIn: { '0%': { opacity: 0 }, '100%': { opacity: 1 }, }, }, }, }, };</script>
+</head>
+<style>
+    .link {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: #ff0123;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+
+<body class="bg-background text-textMain flex items-center justify-center h-screen">
+    <div class="text-center p-6 bg-secondary shadow-xl rounded-lg w-full max-w-md animate-fadeIn">
+        <div
+            class="flex items-center justify-center bg-primary text-white rounded-full w-20 h-20 mx-auto mb-4 animate-bounceSlow shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v2m0 4h.01M4.93 4.93l14.14 14.14M12 19a7 7 0 100-14 7 7 0 000 14z" />
+            </svg>
+        </div>
+        <h1 class="text-5xl font-extrabold text-primary">Error!</h1>
+        <p class="text-lg text-textMain mt-2">Teknik çalışma</p>
+        <p class="text-sm text-textSub mt-4">Sorunu çözene kadar ortaklarımızın oyun sitesi Pinko'yu ziyaret etmenizi
+            öneririz.</p>
+        <a href="" class="link">Pinco Giriş</a>
+    </div>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+        integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"3893623810a84befb990f352a8336e27","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
